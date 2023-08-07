@@ -6,7 +6,7 @@
     <title>Home Page</title>
 
     <!-- Link CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Link icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -30,19 +30,26 @@
                 <label for="">
                     <input type="checkbox">Remember me
                 </label>
-                <a href="#">Forgot password?</a>
+                <a href="#" onclick="rememberAcc()">
+                    Forgot password?
+                </a>
             </div>
 
-            <button type="submit" class="btn">
+            <button type="submit" class="btn" onclick="btnLogin()">
                 Login
             </button>
             <div class="register-link">
                 <p>
                     Don't have an account?
-                        <a href="#">Register</a>
+                        <a href="#" onclick="registerAcc()">
+                            Register
+                        </a>
                 </p>
             </div>
         </form>
     </div>
+
+    <!-- Link JS -->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
